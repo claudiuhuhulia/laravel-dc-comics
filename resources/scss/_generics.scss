@@ -1,9 +1,9 @@
 @use 'vars' as *;
 
-body{
+  body{
     font-family: $main-font;
-}
-img {
+  }
+  img {
     max-width: 80%;
     height: auto;
   }
@@ -13,5 +13,8 @@ img {
   }
   
   li {
+    list-style-type: none;
+  }
+  ul{
     list-style-type: none;
   }

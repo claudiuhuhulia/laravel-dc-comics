@@ -1,6 +1,9 @@
-@use 'header';
-@use 'generics';
 @use 'vars';
+@use 'generics';
+@use 'footer';
+@use 'header';
+
+
 
 @import '~bootstrap/scss/bootstrap';
 

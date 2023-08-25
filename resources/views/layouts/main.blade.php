@@ -19,6 +19,8 @@
         @yield('main')
     </main>
 
+
+    @include('includes.footer')
 </body>
 
 </html>
