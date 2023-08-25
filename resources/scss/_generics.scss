@@ -1,0 +1,17 @@
+@use 'vars' as *;
+
+body{
+    font-family: $main-font;
+}
+img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style-type: none;
+  }

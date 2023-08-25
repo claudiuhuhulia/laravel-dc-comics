@@ -1,0 +1,19 @@
+.jumbo {
+    height: 400px;
+    background-image: url('../images/jumbotron.jpg');
+}
+
+header{
+    height: 135px;
+    a {
+        color: black;
+        padding: 62px 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+    
+        &:hover {
+            border-bottom: 4px solid #0c7cec;
+            color: #0c7cec;
+        }
+    }
+}
