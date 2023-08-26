@@ -3,7 +3,7 @@
     <!-- footer nav -->
     <section class="container footer-flex d-flex justify-content-between h-100">
         <nav class="d-flex">
-            <div class="comicsnav text-start">
+            <div class="comicsnav ">
                 <h1>DC COMICS</h1>
                 <ul>
                     <li><a href="#"> Characters </a></li>
@@ -59,7 +59,7 @@
 
 </footer>
 <div class="footer-user">
-    <div class="d-flex container justify-content-between h-100 align-items-center">
+    <div class=" container d-flex justify-content-between h-100 align-items-center">
         <div class="signup-btn">
             <h3>SIGN UP NOW!</h3>
         </div>
