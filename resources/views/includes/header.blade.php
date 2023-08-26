@@ -5,7 +5,7 @@
     <nav>
         <ul class="d-flex justify-content-between align-items-center">
             <li class="fw-bold"><a href="#"> Characters </a></li>
-            <li class="fw-bold"><a href="#"> Comics </a></li>
+            <li class="fw-bold"><a href="{{ route('comics.index') }}"> Comics </a></li>
             <li class="fw-bold"><a href="#"> Movies </a></li>
             <li class="fw-bold"><a href="#"> Tv </a></li>
             <li class="fw-bold"><a href="#"> Games </a></li>
