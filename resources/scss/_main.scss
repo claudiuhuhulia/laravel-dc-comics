@@ -35,7 +35,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    .card {
+    .my-card {
         flex-basis: calc(100% / 6);
         cursor: pointer;
     }
@@ -52,10 +52,13 @@
     }
 }
 
-.card h3 {
+.my-card h3 {
     color: white;
     margin-top: 10px;
     font-weight: 400;
     font-size: 1rem;
     width: 170px;
+}
+.my-card a{
+    text-decoration: none;
 }

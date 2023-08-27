@@ -12,19 +12,21 @@
         </div>
         <div class="container">
             <div class="card-container">
-                @forelse ($comics as $comic)
-                @empty
-                    <h1 class="text-center">Non ci sono fumetti</h1>
+                @foreach ($comics as $comic)
+                    {{--    @empty
+                    <h1 class="text-center">Non ci sono fumetti</h1> --}}
 
-                    <a href="{{ url("/serie/$loop->index") }}">
-                        <div class="card">
+                    <div class="my-card">
+                        <a href="{{ url("/comics/$loop->index") }}">
+
                             <figure>
                                 <img src="{{ $comic->thumb }}" alt="serie">
                             </figure>
                             <h3> {{ $comic->series }} </h3>
-                        </div>
-                    </a>
-                @endforelse
+                        </a>
+
+                    </div>
+                @endforeach
 
             </div>
 

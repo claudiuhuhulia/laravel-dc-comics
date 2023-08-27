@@ -1,0 +1,105 @@
+.section-header{
+    height: 100px;
+    background-color: rgb(2 130 249);
+    figure {
+        height: 200px;
+        position: relative;
+        width: 236px;
+        img {
+            height: 141%;
+            object-fit: cover;
+            position: absolute;
+            top: -200px;
+            left: 0;
+            max-width: 80%;
+            border: 1px solid white;
+
+        }}
+
+}
+h1{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(0 63 94);;
+}
+.serie-detail{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+    img{
+        max-width: 120%;
+    }
+}
+.price-btn{
+    height: 50px;
+    display: flex;
+    background-color: rgb(85 186 89);
+    margin-top: 10px;
+    margin-bottom: 10px;
+border-bottom: 1px solid black;
+p{
+    display: inline;
+    color: white;
+}
+}
+.price, .availability{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.price{
+    width: 80%;
+    border-right: 1px solid black;
+
+}
+.text{
+    width: 70%;
+   > p{
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+h4{
+    color: rgb(150 249 156);;
+}
+.info{
+    display: flex;
+gap:40px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.single-info{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+p{
+    width: 60%;
+    font-size: 0.9rem;
+}
+}
+.talent, .specs{
+    width: 50%;
+}
+.bgc{
+    background-color:rgb(246 246 246);
+    border-top: 1px solid gray;
+}
+h2{
+margin-bottom: 20px;
+}
+
+.last{
+    border-bottom: 1px solid gray;
+}
+.blue p{
+    color: rgb(79 169 219);
+    font-weight: bold;
+}
