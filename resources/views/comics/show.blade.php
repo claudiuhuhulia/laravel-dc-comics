@@ -66,7 +66,9 @@
         </div>
 
         <div class="d-flex justify-content-end mb-3 mx-3">
-            <a class="btn btn-secondary" href="{{ route('comics.index') }}">Torna alla pagina dei fumetti</a>
+            <a class="btn btn-secondary mx-3" href="{{ route('comics.index') }}">Torna alla pagina dei fumetti</a>
+            <a class="btn btn-warning" href="{{ route('comics.edit', $comic) }}">Modifica</a>
+
         </div>
     </div>
 @endsection
