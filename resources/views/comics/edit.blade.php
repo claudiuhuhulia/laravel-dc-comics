@@ -11,8 +11,9 @@
             <a class="btn btn-secondary" href="{{ route('comics.index') }}">Torna alla pagina dei fumetti</a>
         </div>
         <hr>
-        <form method="POST" action="{{ route('comics.store') }}">
+        <form method="POST" action="{{ route('comics.update', $comic) }}">
             @csrf
+            @method('PUT')
             <div class="row">
                 <div class="col-6">
                     <div class="mb-3">
