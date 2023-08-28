@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('price', 20);
             $table->string('series');
             $table->date('sale_date');
-            $table->string('type', 25);
+            $table->enum('type', ['comic book', 'graphic novel'])->default('comic book');
             $table->string('artists', 200);
             $table->string('writers', 200);
             $table->timestamps();

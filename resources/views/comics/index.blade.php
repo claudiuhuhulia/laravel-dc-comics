@@ -17,7 +17,7 @@
                     <h1 class="text-center">Non ci sono fumetti</h1> --}}
 
                     <div class="my-card">
-                        <a href="{{ url("/comics/$loop->index") }}">
+                        <a href="{{ url("/comics/$comic->id") }}">
 
                             <figure>
                                 <img src="{{ $comic->thumb }}" alt="serie">

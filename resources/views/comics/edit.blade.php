@@ -60,8 +60,8 @@
                         <label for="type" class="form-label">Tipo</label>
                         <select value="{{ $comic->type }}" class="form-select" id="type" name="type"
                             aria-label="Default select example">
-                            <option>comic book</option>
-                            <option>graphic novel</option>
+                            <option @if ($comic->type === 'comic book') selected @endif>comic book</option>
+                            <option @if ($comic->type === 'graphic novel') selected @endif>graphic novel</option>
                         </select>
                     </div>
                 </div>
