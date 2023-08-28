@@ -5,15 +5,10 @@
 @section('section-id', 'comics')
 
 @section('main')
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+
+    {{-- error alert --}}
+    @include('includes.forms.error-alert')
+
     <div class="container">
         <div class="card-title d-flex align-items-center justify-content-between my-2 px-2">
             <h1>Crea Comic</h1>
@@ -27,14 +22,14 @@
                     <div class="mb-3">
                         <label for="title" class="form-label">Titolo</label>
                         <input value="{{ old('title') }}" type="text" name="title" class="form-control" id="title"
-                            aria-describedby="emailHelp" required>
+                            aria-describedby="emailHelp">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="series" class="form-label">Serie</label>
                         <input value="{{ old('series') }}" type="text" name="series" class="form-control" id="series"
-                            aria-describedby="emailHelp" required>
+                            aria-describedby="emailHelp">
                     </div>
                 </div>
                 <div class="col-12">
@@ -54,14 +49,14 @@
                     <div class="mb-3">
                         <label for="price" class="form-label">Prezzo</label>
                         <input value="{{ old('price') }}" type="text" class="form-control" name="price" id="price"
-                            aria-describedby="emailHelp" required>
+                            aria-describedby="emailHelp">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="sale_date" class="form-label">Data Pubblicazione</label>
                         <input type="date" value="{{ old('sale_date') }}" name="sale_date" class="form-control"
-                            id="sale_date" aria-describedby="emailHelp" required>
+                            id="sale_date" aria-describedby="emailHelp">
                     </div>
                 </div>
                 <div class="col-6">

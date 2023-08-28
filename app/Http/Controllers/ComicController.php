@@ -43,7 +43,10 @@ class ComicController extends Controller
             'type' => '',
             'artists' => 'string',
             'writers' => 'string',
-
+        ], [
+            'title.required' => 'il campo Titolo è obbligatorio',
+            'series.required' => 'il campo Serie è obbligatorio',
+            'title.unique' => "il campo $request->title è già esistente",
         ]);
 
         $data = $request->all();
@@ -74,6 +77,21 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        $request->validate([
+            'title' => 'required|string|unique:comics',
+            'series' => 'required|string',
+            'description' => 'string',
+            'thumb' => 'url:http,https',
+            'price' => 'string',
+            'sale_date' => 'date',
+            'type' => 'required|in:comic book,graphic novel',
+            'artists' => 'string',
+            'writers' => 'string',
+        ], [
+            'title.required' => 'il campo Titolo è obbligatorio',
+            'series.required' => 'il campo Serie è obbligatorio',
+            'title.unique' => "il campo $request->title è già esistente",
+        ]);
         $data = $request->all();
         $comic->update($data);
         return to_route('comics.show', $comic);
