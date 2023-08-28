@@ -31,7 +31,7 @@
             </div>
 
         </div>
-        <div class="d-flex">
+        <div class="d-flex mb-4">
             <div class="load-btn">LOAD MORE</div>
             <a href="{{ route('comics.create') }}">
                 <div class="load-btn mx-3">CREA NUOVO COMIC</div>

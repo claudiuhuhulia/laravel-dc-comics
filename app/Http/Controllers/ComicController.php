@@ -35,7 +35,7 @@ class ComicController extends Controller
         $comic = new Comic();
         $comic->fill($data);
         $comic->save();
-        return to_route('comics.index');
+        return to_route('comics.show', $comic);
     }
 
     /**
