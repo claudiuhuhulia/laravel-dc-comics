@@ -68,7 +68,11 @@
         <div class="d-flex justify-content-end mb-3 mx-3">
             <a class="btn btn-secondary mx-3" href="{{ route('comics.index') }}">Torna alla pagina dei fumetti</a>
             <a class="btn btn-warning" href="{{ route('comics.edit', $comic) }}">Modifica</a>
-
+            <form method="POST" action="{{ route('comics.destroy', $comic) }}">
+                @method('DELETE')
+                @csrf
+                <button class="btn btn-danger mx-3">Elimina</button>
+            </form>
         </div>
     </div>
 @endsection
